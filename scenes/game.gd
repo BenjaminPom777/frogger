@@ -5,6 +5,7 @@ var score := 0
 
 func _on_finish_area_2d_body_entered(_body: Node2D) -> void:
 	call_deferred("change_scene")
+	Global.score = score
 	
 	
 func change_scene():
