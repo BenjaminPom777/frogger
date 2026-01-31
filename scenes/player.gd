@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direction: Vector2 
-var speed: int = 200
+var speed: int = 100
 
 func _physics_process(_delta: float) -> void:
 	
@@ -9,10 +9,6 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed 
 	animation()
 	move_and_slide()
-	
-	if Input.is_action_just_pressed("confirm"):
-		print(Input.is_action_just_pressed("confirm"))
-		
 		
 		
 func animation():
